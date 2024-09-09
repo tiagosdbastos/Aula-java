@@ -1,0 +1,37 @@
+//classe
+package desafioconstrutor;
+
+public class Produtos {
+
+    String nome;
+    double preco;
+
+    Produtos(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    Produtos() {
+
+    }
+}
+//main
+package desafioconstrutor;
+
+public class ProdutoTeste {
+    public static void main(String[] args) {
+        Produtos p1 = new Produtos("Feijao", 32);
+
+        Produtos p2 = new Produtos();
+
+        p2.nome = "Feijos";
+        p2.preco = 43;
+
+        System.out.printf("Mercado 1: \n%s\n%.2f\n", p1.nome, p1.preco);
+        System.out.printf("Mercado 2: \n%s\n%.2f\n", p2.nome, p2.preco);
+
+    }
+
+}
+
+
